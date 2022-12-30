@@ -1,13 +1,13 @@
 import React from "react";
 
-function CreateTodoButton() {
-  const onClickButton = (msg) => {
-    alert(msg);
+function CreateTodoButton({ setOpenModal }) {
+  const onClickButton = () => {
+    setOpenModal((prevState) => !prevState);
   };
   return (
     <button
-      className="bg-emerald-700  text-white px-5 my-4 rounded-lg absolute bottom-0 right-0"
-      onClick={() => onClickButton("Modal Here")}
+      className="bg-emerald-700  text-white py-3 px-3 my-4 rounded-lg fixed bottom-0 right-10 z-10"
+      onClick={() => onClickButton()}
     >
       ➕
     </button>
