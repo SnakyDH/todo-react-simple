@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-beige{
+  background-color: #E6E2C3
+}
+.bg-militar{
+  background-color: #88A47C
+}
